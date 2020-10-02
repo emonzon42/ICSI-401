@@ -1,0 +1,13 @@
+% 3)
+H = @(x) x - x.*log(x);
+Hp = @(x) 1 - log(x) - 1/(ln(10));
+x = -5:15;
+plot(x,H(x));
+[Warning: Imaginary parts of complex X and/or Y arguments ignored.] 
+newton(H, Hp, 12,50)
+
+ans =
+
+     0
+
+diary off
