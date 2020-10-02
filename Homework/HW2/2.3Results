@@ -1,0 +1,43 @@
+% 2)
+F = @(x) x^5 + x + 1
+
+F =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)x^5+x+1
+
+bisectsearch(F,-5,5,.0001)
+
+ans =
+
+   -0.7549
+
+F(ans)
+
+ans =
+
+   6.6561e-05
+
+% 3)
+F = @(x) sin(x)
+
+F =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)sin(x)
+
+bisectsearch(F,-pi/2,5*pi/2,.0001)
+
+ans =
+
+    3.1416
+
+F(ans)
+
+ans =
+
+   1.2246e-16
+
+diary off
