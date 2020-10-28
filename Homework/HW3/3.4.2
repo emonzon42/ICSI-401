@@ -1,0 +1,27 @@
+A = [10^(-20) , 1; 1,1]
+
+A =
+
+  Column 1
+
+     1.000000000000000e-20
+     1.000000000000000e+00
+
+  Column 2
+
+     1.000000000000000e+00
+     1.000000000000000e+00
+
+b   = [1;1];
+A/b
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+} 
+A\b
+
+ans =
+
+     0
+     1
+
+diary off
